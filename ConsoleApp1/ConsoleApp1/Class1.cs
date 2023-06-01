@@ -10,9 +10,7 @@ namespace simple_calc
     {
         static void Main(string[] args)
         {
-            char again = 'д';
-            while (again == 'д')
-            {
+           
                 double a;
                 double b;
                 double total;
@@ -47,25 +45,13 @@ namespace simple_calc
 
                 else if (oper == '/')
                 {
-                    if (b != 0)
-                    {
+                    
                         total = a / b;
                         Console.WriteLine("Деление " + a + " на " + b + " равно " + total + ".");
-                    }
-                    else
-                    {
-
-                        Console.WriteLine("Ошибка - Деление на ноль ");
-                    }
                 }
-                else
-                {
-                    Console.WriteLine("Ошибка - Неизвестный оператор.");
-                }
-                Console.WriteLine("Вы хотите продолжить работу с калькулятором? (д/н)");
-                again = Convert.ToChar(Console.ReadLine());
-            }
-        }
+               
+         }
+        
     }
 }
 
